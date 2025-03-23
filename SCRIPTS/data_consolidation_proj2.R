@@ -88,6 +88,7 @@ congressSupport2<-congressSupport%>%
 
 # Add months
 library(padr)
+library(tidyr)
 congressSupport2$Date<-paste(congressSupport2$Date, "/01", sep = "")
 congressSupport2$Date<-as.Date(congressSupport2$Date)
 congressSupport2<-pad(congressSupport2, interval = "month")
@@ -117,6 +118,8 @@ allData<-full_join(allData, unemployment, by = "Date")
 allData<-allData[-(884:945),]
 allData<-full_join(allData, GDP, by = "Date")
 allData<-allData[-(884:906),]
+allData<-allData[,c(-5,-8)]
+names(allData)<-c("Date", "President", "Approval","PrezParty","Chamber","ChamberParty","UnemploymentRate","GDP")
 allDataGDPInferred<-allData%>%
   fill(GDP) #Assuming that GDP remains stagnant within the quarter
 # Done!
