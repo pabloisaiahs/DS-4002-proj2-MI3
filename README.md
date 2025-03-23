@@ -27,32 +27,19 @@ This repository contains the code, data, and output for [project sum.]. This pro
   - `LICENSE.md` → MIT License  
 
 📂 **DATA/**  
-  - `file.csv` → desc
+  - `data-1-15.csv` → time-series data of approval rating and dates for 15 presidents
 
 📂 **SCRIPTS/**  
-  - `script.ipynb` → desc
+  - `ApprovalEDA.py` → compiles data from presidents' timelines and normalizes them into one CSV
 
 📂 **OUTPUT/**  
-  - Figures and charts from our visualizations  
+  - `approval_ratings_clean.csv` → compiles data from `ApprovalEDA.py`, it's all the time series data for each pres into one.
 
 ---
 
 ## **3. Instructions for Reproducing Results**  
 
-### **📝 1. Gameplay Element Extraction (Python)**
-1. 
-
-### **📊 2. Sentiment Analysis (R)**
-1. 
-
-### **📈 3. Merging Sentiment Scores with Gameplay Elements (Python)**
-1. 
-
-### **🎨 4. Visualizations (Python)**
-1. 
-
-### **📊 5. Statistical Analysis - T-Tests (Python)**
-1. 
+### **1. **
 
 ---
 
