@@ -32,6 +32,8 @@ This repository contains the code, data, and output for the presidential approva
 
 📂 **DATA/**  
   - `data-1-15.csv` → time-series data of approval rating and dates for 15 presidents
+  - `allData.csv` → combined data, product of `data_consolidation_proj2.R`
+  - `allDataInferredGDP.csv` → above, but extended quarterly GDP values to cover each month in the quarter (inaccurate, but potentially necessary for regression)
 
 📂 **SCRIPTS/**  
   - `ApprovalEDA.py` → compiles data from presidents' timelines and normalizes them into one CSV
