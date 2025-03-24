@@ -120,13 +120,12 @@ GDP2<-GDP2[,-3]
 # Final merge
 allData<-full_join(dataMain2, CPI, by = "Date")
 allData<-left_join(allData, congressSupport2, by = "Date")
-allData<-allData[,c(-5,-9)]
+allData<-allData[,c(-6,-10)]
 allData<-full_join(allData, unemployment, by = "Date")
 allData<-allData[-(884:945),]
 allData<-full_join(allData, GDP2, by = "Date")
 allData<-allData[-(884:906),]
-allData<-allData[,c(-5,-8)]
-names(allData)<-c("Date", "President", "Approval","PrezParty","Chamber","ChamberParty","UnemploymentRate","GDP", "GDPchange")
+names(allData)<-c("Date", "President", "Approval","PrezParty","CPIChange","Chamber","ChamberParty","PctVotes","UnemploymentRate","GDP", "GDPchange")
 allDataGDPInferred<-allData%>%
   fill(GDP)%>% #Assuming that GDP remains stagnant within the quarter
   fill(GDPchange)
