@@ -79,17 +79,17 @@ This repository contains the code, data, and output for the presidential approva
    - Load the data set.
    - ensure the dataset is in chronological order, and the key variables are Approval, CPIChange, UnemploymentRate, GDP, GDPchange, PctVotes, PrezParty, Chamber.
    - Observations with missing values in any of the key variables should be removed to ensure complete cases for regression modeling.
-### **2. Model Specification
+### **2. Model Specification**
    - A regression model was specified, including all numeric predictors (CPIChange, UnemploymentRate, GDP, GDPchange, and PctVotes) and categorical variables (PrezParty and Chamber).
    - Remove Chamber to avoid redundancy and potential multicolinearity.
-### **3. Fitting the Full Model
+### **3. Fitting the Full Model**
    - The full model was estimated using ordinary least squares (OLS) regression, provided by statsmodels (use `statsmodel.formula.api` for fitting the OLS regression).
    - The model summary output was reviewed to assess the statistical significance of each predictor and the overall explanatory power of the model, as indicated by the R-squared and adjusted R-squared values.
 ### **4. Backwards Elimination and Final Model Evaluation**
    - A backward elimination procedure was applied to refine the model. Predictors with the highest p-values above the 0.05 significance threshold were removed.
    - The final model, after backward elimination, was reviewed in detail. The selected predictors, their coefficients, and statistical significance were reported.
    - The explanatory power of the model was reassessed through the adjusted R-squared value provided in the final model summary.
-### **5. Repeat Procedure Using Data without GDP
+### **5. Repeat Procedure Using Data without GDP**
    - Repeat the procdure using data without GDP and compare the two models performances 
 
 
