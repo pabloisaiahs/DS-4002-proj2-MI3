@@ -98,7 +98,5 @@ This project examines presidential approval ratings and the factors that contrib
 In order to accomplish the above, we looked at average presidential approval rating in a given month as our response variable, and paired it with GDP quarterly change, unemployment rate, CPI yearly change, presidential party affiliation, and the percentage of senators from a president's party voting in favor of the president's supported legislation in a given year. We created a linear model with some of these factors to attempt to predict approval rating for a hypothetical president with certain values of these variables. 
 
 In the end, based on backwards selection, we found that the most effective models included unemployment rate, GDP (nominal) and percentage favorable votes in the senate (if we include nominal GDP as a predictor variable), and CPI change and percentage favorable votes in the senate if we did not include nominal GDP as a predictor variable. Our R-squared for the former model was around 0.4, which means that our final model was at least somewhat predictive of presidential approval ratings. 
-## **Instructions for Reproducing Results**
-- 
 
 **Team 7, The Unsupervised Learners - DS 4002**
