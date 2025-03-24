@@ -36,15 +36,18 @@ This repository contains the code, data, and output for the presidential approva
   - `allDataInferredGDP.csv` → above, but extended quarterly GDP values to cover each month in the quarter (inaccurate, but potentially necessary for regression)
 
 📂 **SCRIPTS/**  
-  - `ApprovalEDA.py` → compiles data from presidents' timelines and normalizes them into one CSV
-  - `data_consolidation_proj2.R` → combines and normalizes data from all sources
-  - `forecasting_regression.ipynb` → perform regression analysis
+  - `ApprovalEDA.py` → compiles data from presidents' timelines and normalizes them into one CSV.
+  - `data_consolidation_proj2.R` → combines and normalizes data from all sources.
+  - `forecasting_regression.ipynb` → perform regression analysis.
+  - `approval_basic.ipynb` → perform basic analysis of time series.
 
 📂 **OUTPUT/**  
-  - `approval_ratings_clean.csv` → compiles data from `ApprovalEDA.py`, it's all the time series data for each pres into one.
-  - `approval_unemployment.png` → EDA for relationship between approval ratings and unemployment.
-  - `modelWithGDP.png` → Regression output for the model that includes nominal GDP
-  - `modelWithoutGDP.png` → Regression output for the model that excludes nominal GDP
+  - `approval_ratings_clean.csv` → compiles data from `ApprovalEDA.py`, it's all the time series data for each President into one.
+  - `approval_unemployment.png` → EDA for the relationship between approval ratings and unemployment.
+  - `modelWithGDP.png` → Regression output for the model that includes nominal GDP.
+  - `modelWithoutGDP.png` → Regression output for the model that excludes nominal GDP.
+  - `ratings_time_president.png` → Approval ratings for each President.
+  - `avg_ratings_party.png` → Approval ratings for each party.
 
 ---
 
