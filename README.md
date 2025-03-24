@@ -51,9 +51,30 @@ This repository contains the code, data, and output for the presidential approva
 
 ---
 
-## **3. Instructions for Reproducing Results**  
+## 3. Instructions for Reproducing Regression Results
 
-### **1. **
+### Regression Analysis Including GDP
+- **Setup:**  
+  Place `allDataInferredGDP.csv` in the DATA/ folder and open `forecasting_regression.ipynb` in Google Colab.
+- **Data Preparation:**  
+  The notebook merges all data sources and uses inferred monthly GDP values.
+- **Model Fitting:**  
+  Fit a full OLS model with predictors: CPIChange, UnemploymentRate, GDP, GDPchange, PctVotes, PrezParty, Chamber, and ChamberParty. Backward elimination is then applied.
+- **Outputs:**  
+  Regression summary and diagnostic plots are generated. Results are saved as `modelWithGDP.png` in OUTPUT/.
+
+---
+
+### Regression Analysis Excluding GDP
+- **Setup:**  
+  In the same notebook, navigate to the section for the model without GDP.
+- **Data Preparation:**  
+  The same data is used but the predictor GDP is omitted.
+- **Model Fitting:**  
+  Fit an OLS model with predictors: CPIChange, UnemploymentRate, GDPchange, PctVotes, PrezParty, and Chamber. Backward elimination is applied.
+- **Outputs:**  
+  Regression summary and diagnostics are generated. Results are saved as `modelWithoutGDP.png` in OUTPUT/.
+
 
 ---
 
