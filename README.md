@@ -1,10 +1,10 @@
 # DS-4002-proj2-MI3
 MI3 Repository - Group 7  
 
-## [TITLE]  
+## [PRESIDENTIAL APPROVAL RATINGS]  
 
 ### **Contents of this Repository**  
-This repository contains the code, data, and output for [project sum.]. This project was completed as part of the **DS 4002** course at UVA.  
+This repository contains the code, data, and output for the [presidential approval ratings project]. This project was completed as part of the **DS 4002** course at UVA.  
 
 ---
 
