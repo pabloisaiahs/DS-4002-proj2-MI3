@@ -44,11 +44,17 @@ This repository contains the code, data, and output for [project sum.]. This pro
 ---
 
 ## **4. Citations**  
+
 ### Data Sources
+
 https://fred.stlouisfed.org/series/MEDCPIM158SFRBCLE
+
 https://fred.stlouisfed.org/series/GDPC1#
+
 https://fred.stlouisfed.org/series/UNRATE
-Brookings Institution - Congressional political statistics
+
+[Brookings Institution - Congressional political statistics - Table 8-2](https://www.brookings.edu/articles/vital-statistics-on-congress/)
+
 https://news.gallup.com/poll/116677/presidential-approval-ratings-gallup-historical-statistics-trends.aspx
 
 ### Resources Used
