@@ -58,15 +58,25 @@ https://fred.stlouisfed.org/series/UNRATE
 https://news.gallup.com/poll/116677/presidential-approval-ratings-gallup-historical-statistics-trends.aspx
 
 ### Resources Used
+
 https://www.statology.org/convert-strings-to-dates-in-r/
+
 https://www.geeksforgeeks.org/element-wise-concatenation-of-string-vector-in-r/
+
 https://www.reddit.com/r/rstats/comments/ii95ue/making_two_graphs_side_by_side_ggplot2/
+
 https://stackoverflow.com/questions/61532807/r-how-to-remove-the-day-from-a-date
+
 https://www.reddit.com/r/Rlanguage/comments/18bqdwr/issue_merging_datasets/
+
 https://dplyr.tidyverse.org/reference/filter.html
+
 https://stackoverflow.com/questions/16787038/insert-rows-for-missing-dates-times
+
 https://stackoverflow.com/questions/71843108/how-to-convert-character-to-date-with-two-different-types-of-date-formats-in-r
+
 https://tidyr.tidyverse.org/reference/fill.html
+
 https://stackoverflow.com/questions/70068826/new-column-with-percentage-change-in-r
 
 ---
