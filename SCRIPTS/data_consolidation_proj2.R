@@ -57,7 +57,7 @@ dataMain$PrezParty<-ifelse(dataMain$President=="Truman" |
 # Grouping approval ratings by taking the average approval rating in a month 
 dataMain2<-dataMain%>%
   group_by(Date, President)%>%
-  reframe(Approval = round(mean(Approval), 2))
+  reframe(Approval = round(mean(Approval), 4))
 # Remove January rows for newly-elected presidents since they're only in office for 10 days + inauguration boost
 dataMain2<-dataMain2[c(-855, -794, -697, -504, -297, -236),]
 
@@ -110,16 +110,25 @@ congressSupport2<-congressSupport2%>%
 
 congressSupport2$Date<-format(congressSupport2$Date, "%Y/%m")
 
+# Add Percent Change column for GDP
+GDP2<-GDP%>%
+  mutate(PrevQuarterGDP = c(GDP[1], GDP[1:311]))%>% # Assuming zero change for first quarter
+  mutate(GDPchange = round(((GDP - PrevQuarterGDP) / PrevQuarterGDP )*100, 4)  )
+
+GDP2<-GDP2[,-3]
+
 # Final merge
 allData<-full_join(dataMain2, CPI, by = "Date")
 allData<-left_join(allData, congressSupport2, by = "Date")
 allData<-allData[,c(-5,-9)]
 allData<-full_join(allData, unemployment, by = "Date")
 allData<-allData[-(884:945),]
-allData<-full_join(allData, GDP, by = "Date")
+allData<-full_join(allData, GDP2, by = "Date")
 allData<-allData[-(884:906),]
 allData<-allData[,c(-5,-8)]
-names(allData)<-c("Date", "President", "Approval","PrezParty","Chamber","ChamberParty","UnemploymentRate","GDP")
+names(allData)<-c("Date", "President", "Approval","PrezParty","Chamber","ChamberParty","UnemploymentRate","GDP", "GDPchange")
 allDataGDPInferred<-allData%>%
-  fill(GDP) #Assuming that GDP remains stagnant within the quarter
+  fill(GDP)%>% #Assuming that GDP remains stagnant within the quarter
+  fill(GDPchange)
+
 # Done!
