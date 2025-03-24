@@ -15,7 +15,11 @@ This repository contains the code, data, and output for [project sum.]. This pro
     - `pandas`
     - `matplotlib`
   - **R:**  
-    - 
+    - `ggplot2`
+    - `dplyr`
+    - `patchwork`
+    - `padr`
+    - `tidyr`
 - **Platform:** Windows 10 / macOS Monterey / Ubuntu 20.04  
 
 ---
